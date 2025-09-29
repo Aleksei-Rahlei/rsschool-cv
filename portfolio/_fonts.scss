@@ -1,0 +1,99 @@
+// Mixins fonts
+
+@mixin h1-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	font-size: 116px;
+	line-height: 132px;
+	text-transform: uppercase;
+}
+
+@mixin h2-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+@mixin h3-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+
+@mixin h4-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+@mixin body-base-font {
+  font-family: "Mulish", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin body-small-font {
+  font-family: "Mulish", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+@mixin body-base-italic-font {
+  font-family: "Mulish", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+@mixin body-decoration-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 54px;
+}
+
+@mixin component-base-font {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+// Style of font classes
+
+.title-h1 {
+	@include h1-font;
+}
+.title-h2 {
+	@include h2-font;
+}
+.title-h3 {
+	@include h3-font;
+}
+.title-h4 {
+	@include h4-font;
+}
+.body-base-font {
+	@include body-base-font;
+}
+.body-small-font {
+	@include body-small-font;
+}
+.body-base-italic-font {
+	@include body-base-italic-font;
+}
+.body-decoration-font {
+	@include body-decoration-font;
+}
+.component-base-font {
+	@include component-base-font;
+}
